@@ -6,22 +6,33 @@
 
 .main-container {
   background-color: aqua;
+  height: 100vh;
+  padding-top: 5%;
+}
+
+.game-container {
+  background-color: #fff;
+  width: 400px;
+  margin: auto;
 }
 
 .game-title {
-  background-color: #fff;
-  max-width: 30%;
-  margin: auto;
+  width: 100%;
   text-align: center;
+  padding: 10px;
 }
 
-.game-conatiner {
-  background-color: #fff;
-  max-width: 30%;
+.box-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   margin: auto;
+  justify-content: space-evenly;
 }
 
 .box {
-
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
 }
 
