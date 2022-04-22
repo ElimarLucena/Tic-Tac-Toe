@@ -5,7 +5,7 @@ function TicTacToe() {
   return (
     <main className="main-container">
       <h1 className="game-title">TicTacToe</h1>
-      <section>
+      <section className="game-conatiner">
         <section>
           <button className="box-1">?</button>
           <button className="box-2">?</button>

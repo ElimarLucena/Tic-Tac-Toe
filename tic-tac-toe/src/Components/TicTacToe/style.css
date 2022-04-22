@@ -14,3 +14,9 @@
   margin: auto;
   text-align: center;
 }
+
+.game-conatiner {
+  background-color: #fff;
+  max-width: 30%;
+  margin: auto;
+}
