@@ -3,8 +3,8 @@ import './style.css';
 
 function TicTacToe() {
   return (
-    <main>
-      <h1>TicTacToe</h1>
+    <main className="main-container">
+      <h1 className="game-title">TicTacToe</h1>
       <section>
         <section>
           <button className="box-1">?</button>
