@@ -1,98 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import Context from '../../Provider/context';
 import './style.css';
 
 function TicTacToe() {
-  const [one, setOne] = useState('');
-  const [two, setTwo] = useState('');
-  const [three, setThree] = useState('');
-  const [four, setFour] = useState('');
-  const [five, setFive] = useState('');
-  const [six, setSix] = useState('');
-  const [seven, setSeven] = useState('');
-  const [eight, setEight] = useState('');
-  const [nine, setNine] = useState('');
-
-  const [currPlayer, setCurrPlayer] = useState('X');
-
-  const choosingBox = ({ target: { id } }) => {
-    switch (id) {
-      case '1':
-        if (one !== '') {
-          return '';
-        } else {
-          setOne(currPlayer);
-        }
-        break;
-      case '2':
-        if (two !== '') {
-          return '';
-        } else {
-          setTwo(currPlayer);
-        }
-        break;
-      case '3':
-        if (three !== '') {
-          return '';
-        } else {
-          setThree(currPlayer);
-        }
-        break;
-      case '4':
-        if (four !== '') {
-          return '';
-        } else {
-          setFour(currPlayer);
-        }
-        break;
-      case '5':
-        if (five !== '') {
-          return '';
-        } else {
-          setFive(currPlayer);
-        }
-        break;
-      case '6':
-        if (six !== '') {
-          return '';
-        } else {
-          setSix(currPlayer);
-        }
-        break;
-      case '7':
-        if (seven !== '') {
-          return '';
-        } else {
-          setSeven(currPlayer);
-        }
-        break;
-      case '8':
-        if (eight !== '') {
-          return '';
-        } else {
-          setEight(currPlayer);
-        }
-        break;
-      case '9':
-        if (nine !== '') {
-          return '';
-        } else {
-          setNine(currPlayer);
-        }
-        break;
-      default:
-        '';
-    }
-
-    choosingCurrPlayer();
-  }
-
-  const choosingCurrPlayer = () => {
-    if (currPlayer === "X") {
-      setCurrPlayer('O');
-    } else {
-      setCurrPlayer("X");
-    }
-  }
+  const {
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight,
+    nine,
+    choosingBox,
+  } = useContext(Context);
 
   return (
     <main className="main-container">
@@ -109,56 +31,56 @@ function TicTacToe() {
             <button
               id="2"
               className={ `box ${two}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { two }
             </button>
             <button
               id="3"
               className={ `box ${three}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { three }
             </button>
             <button
               id="4"
               className={ `box ${four}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { four }
             </button>
             <button
               id="5"
               className={ `box ${five}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { five }
             </button>
             <button
               id="6"
               className={ `box ${six}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { six }
             </button>
             <button
               id="7"
               className={ `box ${seven}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { seven }
             </button>
             <button
               id="8"
               className={ `box ${eight}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { eight }
             </button>
             <button
               id="9"
               className={ `box ${nine}` }
-              onClick={ choosingBox }
+              onClick={ (event) => choosingBox(event) }
             >
               { nine }
             </button>
