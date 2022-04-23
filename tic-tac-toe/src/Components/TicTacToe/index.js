@@ -102,16 +102,15 @@ function TicTacToe() {
       
       {
         win !== '' ? (
-          <div>
-            <h1>Winner: <span>{ win }</span></h1>
-            <section>
-              <button
-                type="button"
-                onClick={ () => playAgain() }
-              >
-                Play Again
-              </button>
-            </section>
+          <div className="winner-again">
+            <h1 className="winner">Winner: <span>{ win }</span></h1>
+            <button
+              type="button"
+              className="play-again"
+              onClick={ () => playAgain() }
+            >
+              Play Again
+            </button>
           </div>
         ) : ( 
           <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 

@@ -38,15 +38,47 @@
 }
 
 .X {
-  background-color: rgb(18, 233, 11);
+  background-color: rgb(29, 247, 5);
 }
 
 .O {
-  background-color: rgb(239, 9, 9);
+  background-color: rgb(236, 32, 21);
 }
 
 .currPlayer {
   text-align: center;
   padding-top: 20px;
+}
+
+.winner-again {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  margin-top: 20px;
+}
+
+.winner {
+  grid-column: 2 / 3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.play-again {
+  grid-column: 2 / 3;
+  height: 40px;
+  font-size: 23px;
+  border: none;
+  background-color: rgb(29, 247, 5);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.play-again:hover {
+  background-color: rgb(236, 32, 21);
+  color: #fff;
 }
 
