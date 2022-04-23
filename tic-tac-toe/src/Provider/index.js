@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Context from './context';
 
 function Provider({ children }) {
@@ -13,6 +13,8 @@ function Provider({ children }) {
   const [nine, setNine] = useState('');
 
   const [currPlayer, setCurrPlayer] = useState('X');
+
+  const [win, setWin] = useState('');
 
   const choosingBox = ({ target: { id } }) => {
     switch (id) {
@@ -93,6 +95,48 @@ function Provider({ children }) {
       setCurrPlayer("X");
     }
   }
+
+  const checkingWinner = (firstBox, secondBox, thirdBox) => {
+    if (firstBox !== '' && firstBox == secondBox && secondBox === thirdBox) {
+      return true;
+    };
+  }
+
+  useEffect(() => {
+    // horizontal lines
+
+    if (checkingWinner(one, two, three)) {
+      setWin('win');
+    }
+    if (checkingWinner(four, five, six)) {
+      setWin('win');
+    }
+    if (checkingWinner(seven, eight, nine)) {
+      setWin('win');
+    }
+
+    // vertical lines
+
+    if (checkingWinner(one, four, seven)) {
+      setWin('win');
+    }
+    if (checkingWinner(two, five, eight)) {
+      setWin('win');
+    }
+    if (checkingWinner(three, six, nine)) {
+      setWin('win');
+    }
+
+    // transverse lines
+
+    if (checkingWinner(one, five, nine)) {
+      setWin('win');
+    }
+    if (checkingWinner(three, five, seven)) {
+      setWin('win');
+    }
+
+  }, [one, two, three, four, five, six, seven, eight, nine,])
 
   const contextValues = {
     one,
