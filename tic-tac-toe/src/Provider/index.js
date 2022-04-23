@@ -106,41 +106,41 @@ function Provider({ children }) {
     // horizontal lines
 
     if (checkingWinner(one, two, three)) {
-      setWin('win');
+      setWin(one);
       return;
     }
     if (checkingWinner(four, five, six)) {
-      setWin('win');
+      setWin(four);
       return;
     }
     if (checkingWinner(seven, eight, nine)) {
-      setWin('win');
+      setWin(seven);
       return;
     }
 
     // vertical lines
 
     if (checkingWinner(one, four, seven)) {
-      setWin('win');
+      setWin(four);
       return;
     }
     if (checkingWinner(two, five, eight)) {
-      setWin('win');
+      setWin(five);
       return;
     }
     if (checkingWinner(three, six, nine)) {
-      setWin('win');
+      setWin(six);
       return;
     }
 
     // transverse lines
 
     if (checkingWinner(one, five, nine)) {
-      setWin('win');
+      setWin(nine);
       return;
     }
     if (checkingWinner(three, five, seven)) {
-      setWin('win');
+      setWin(five);
       return;
     }
 
@@ -157,6 +157,7 @@ function Provider({ children }) {
     eight,
     nine,
     currPlayer,
+    win,
     choosingBox,
   }
   return (

@@ -14,6 +14,7 @@ function TicTacToe() {
     eight,
     nine,
     currPlayer,
+    win,
     choosingBox,
   } = useContext(Context);
 
@@ -88,6 +89,9 @@ function TicTacToe() {
         </section>
       </div>
       <h1>Current Player: <span>{ currPlayer }</span></h1>
+      {
+        win !== '' && <h1>Winner: <span>{ win }</span></h1>
+      }
     </main>
   )
 }
