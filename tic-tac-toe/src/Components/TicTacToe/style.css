@@ -5,13 +5,12 @@
 }
 
 .main-container {
-  background-color: aqua;
+  background-color: rgb(82, 77, 139);
   height: 100vh;
   padding-top: 5%;
 }
 
 .game-container {
-  background-color: #fff;
   width: 400px;
   margin: auto;
 }
@@ -20,14 +19,19 @@
   width: 100%;
   text-align: center;
   padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.233);
 }
 
 .box-conatiner {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
   width: 100%;
   margin: auto;
   justify-content: space-evenly;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
 }
 
 .box {
@@ -35,14 +39,56 @@
   width: 120px;
   height: 120px;
   margin-bottom: 10px;
+  border: none;
+  background-color: rgb(6, 6, 6);
+}
+
+.box:nth-child(1){
+  box-shadow: 10px 10px 0px 10px rgb(63, 242, 4);
+}
+
+.box:nth-child(2){
+  box-shadow: 10px 10px 0px 10px rgb(63, 242, 4);
+}
+
+.box:nth-child(3){
+  box-shadow: -5px 10px 0px 5px rgb(63, 242, 4);
+}
+
+.box:nth-child(4){
+  box-shadow: 10px 10px 0px 10px rgb(63, 242, 4);
+}
+
+.box:nth-child(5){
+  box-shadow: 10px 10px 0px 10px rgb(63, 242, 4);
+}
+
+.box:nth-child(6){
+  box-shadow: -5px 0px 0px 5px rgb(63, 242, 4);
+}
+
+.box:nth-child(7){
+  box-shadow: 10px -5px 0px 5px rgb(63, 242, 4);
+}
+
+.box:nth-child(8){
+  box-shadow: 10px -5px 0px 5px rgb(63, 242, 4);
+}
+
+.box:nth-child(9){
+  box-shadow: -5px -5px 0px 5px rgb(63, 242, 4);
 }
 
 .X {
-  background-color: rgb(29, 247, 5);
+  color: rgb(4, 72, 242);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .O {
-  background-color: rgb(236, 32, 21);
+  color: rgb(255, 0, 238);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .currPlayer {
@@ -67,8 +113,8 @@
   height: 40px;
   font-size: 23px;
   border: none;
-  background-color: rgb(29, 247, 5);
-  color: rgb(0, 0, 0);
+  background-color: rgb(253, 232, 4);
+  color: black;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
   width: 80%;
@@ -78,7 +124,7 @@
 }
 
 .play-again:hover {
-  background-color: rgb(236, 32, 21);
-  color: #fff;
+  background-color: rgb(63, 242, 4);
+  color: black;
 }
 
