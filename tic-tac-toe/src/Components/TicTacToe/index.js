@@ -101,63 +101,63 @@ function TicTacToe() {
         <section className="box-conatiner">
             <button
               id="1"
-              className="box"
+              className={ `box ${one}` }
               onClick={ (event) => choosingBox(event) }
             >
               { one }
             </button>
             <button
               id="2"
-              className="box"
+              className={ `box ${two}` }
               onClick={ choosingBox }
             >
               { two }
             </button>
             <button
               id="3"
-              className="box"
+              className={ `box ${three}` }
               onClick={ choosingBox }
             >
               { three }
             </button>
             <button
               id="4"
-              className="box"
+              className={ `box ${four}` }
               onClick={ choosingBox }
             >
               { four }
             </button>
             <button
               id="5"
-              className="box"
+              className={ `box ${five}` }
               onClick={ choosingBox }
             >
               { five }
             </button>
             <button
               id="6"
-              className="box"
+              className={ `box ${six}` }
               onClick={ choosingBox }
             >
               { six }
             </button>
             <button
               id="7"
-              className="box"
+              className={ `box ${seven}` }
               onClick={ choosingBox }
             >
               { seven }
             </button>
             <button
               id="8"
-              className="box"
+              className={ `box ${eight}` }
               onClick={ choosingBox }
             >
               { eight }
             </button>
             <button
               id="9"
-              className="box"
+              className={ `box ${nine}` }
               onClick={ choosingBox }
             >
               { nine }
