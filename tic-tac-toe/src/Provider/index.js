@@ -154,6 +154,24 @@ function Provider({ children }) {
     }
   }, [win])
 
+  const playAgain = () => {
+    setOne('');
+    setTwo('');
+    setThree('');
+    setFour('');
+    setFive('');
+    setSix('');
+    setSeven('');
+    setEight('');
+    setNine('');
+
+    setCurrPlayer('X');
+
+    setWin('');
+
+    setDisabled(false);
+  }
+
   const contextValues = {
     one,
     two,
@@ -168,6 +186,7 @@ function Provider({ children }) {
     win,
     disabled,
     choosingBox,
+    playAgain,
   }
   return (
     <Context.Provider value={ contextValues }>
