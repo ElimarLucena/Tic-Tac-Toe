@@ -88,9 +88,13 @@ function TicTacToe() {
             </button>
         </section>
       </div>
-      <h1>Current Player: <span>{ currPlayer }</span></h1>
+      
       {
-        win !== '' && <h1>Winner: <span>{ win }</span></h1>
+        win !== '' ? (
+          <h1>Winner: <span>{ win }</span></h1>
+        ) : ( 
+          <h1>Current Player: <span>{ currPlayer }</span></h1> 
+        )
       }
     </main>
   )
