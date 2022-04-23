@@ -16,6 +16,8 @@ function Provider({ children }) {
 
   const [win, setWin] = useState('');
 
+  const [disabled, setDisabled] = useState(false);
+
   const choosingBox = ({ target: { id } }) => {
     switch (id) {
       case '1':
@@ -146,6 +148,12 @@ function Provider({ children }) {
 
   }, [one, two, three, four, five, six, seven, eight, nine,])
 
+  useEffect(() => {
+    if (win !== '') {
+      setDisabled(true);
+    }
+  }, [win])
+
   const contextValues = {
     one,
     two,
@@ -158,6 +166,7 @@ function Provider({ children }) {
     nine,
     currPlayer,
     win,
+    disabled,
     choosingBox,
   }
   return (

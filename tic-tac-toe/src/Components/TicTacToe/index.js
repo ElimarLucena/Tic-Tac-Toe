@@ -15,6 +15,7 @@ function TicTacToe() {
     nine,
     currPlayer,
     win,
+    disabled,
     choosingBox,
   } = useContext(Context);
 
@@ -26,6 +27,7 @@ function TicTacToe() {
             <button
               id="1"
               className={ `box ${one}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { one }
@@ -33,6 +35,7 @@ function TicTacToe() {
             <button
               id="2"
               className={ `box ${two}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { two }
@@ -40,6 +43,7 @@ function TicTacToe() {
             <button
               id="3"
               className={ `box ${three}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { three }
@@ -47,6 +51,7 @@ function TicTacToe() {
             <button
               id="4"
               className={ `box ${four}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { four }
@@ -54,6 +59,7 @@ function TicTacToe() {
             <button
               id="5"
               className={ `box ${five}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { five }
@@ -61,6 +67,7 @@ function TicTacToe() {
             <button
               id="6"
               className={ `box ${six}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { six }
@@ -68,6 +75,7 @@ function TicTacToe() {
             <button
               id="7"
               className={ `box ${seven}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { seven }
@@ -75,6 +83,7 @@ function TicTacToe() {
             <button
               id="8"
               className={ `box ${eight}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { eight }
@@ -82,6 +91,7 @@ function TicTacToe() {
             <button
               id="9"
               className={ `box ${nine}` }
+              disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
               { nine }
