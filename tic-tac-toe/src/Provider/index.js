@@ -99,7 +99,7 @@ function Provider({ children }) {
   }
 
   const checkingWinner = (firstBox, secondBox, thirdBox) => {
-    if (firstBox !== '' && firstBox == secondBox && secondBox === thirdBox) {
+    if (firstBox !== '' && firstBox === secondBox && secondBox === thirdBox) {
       return true;
     };
   }
