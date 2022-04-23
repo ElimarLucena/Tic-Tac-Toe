@@ -13,6 +13,7 @@ function TicTacToe() {
     seven,
     eight,
     nine,
+    currPlayer,
     choosingBox,
   } = useContext(Context);
 
@@ -86,6 +87,7 @@ function TicTacToe() {
             </button>
         </section>
       </div>
+      <h1>Current Player: <span>{ currPlayer }</span></h1>
     </main>
   )
 }

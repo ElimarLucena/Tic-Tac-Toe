@@ -156,6 +156,7 @@ function Provider({ children }) {
     seven,
     eight,
     nine,
+    currPlayer,
     choosingBox,
   }
   return (
