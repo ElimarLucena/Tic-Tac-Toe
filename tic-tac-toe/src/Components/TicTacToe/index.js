@@ -114,7 +114,7 @@ function TicTacToe() {
             </section>
           </div>
         ) : ( 
-          <h1>Current Player: <span>{ currPlayer }</span></h1> 
+          <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
         )
       }
     </main>
