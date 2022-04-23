@@ -107,33 +107,41 @@ function Provider({ children }) {
 
     if (checkingWinner(one, two, three)) {
       setWin('win');
+      return;
     }
     if (checkingWinner(four, five, six)) {
       setWin('win');
+      return;
     }
     if (checkingWinner(seven, eight, nine)) {
       setWin('win');
+      return;
     }
 
     // vertical lines
 
     if (checkingWinner(one, four, seven)) {
       setWin('win');
+      return;
     }
     if (checkingWinner(two, five, eight)) {
       setWin('win');
+      return;
     }
     if (checkingWinner(three, six, nine)) {
       setWin('win');
+      return;
     }
 
     // transverse lines
 
     if (checkingWinner(one, five, nine)) {
       setWin('win');
+      return;
     }
     if (checkingWinner(three, five, seven)) {
       setWin('win');
+      return;
     }
 
   }, [one, two, three, four, five, six, seven, eight, nine,])
