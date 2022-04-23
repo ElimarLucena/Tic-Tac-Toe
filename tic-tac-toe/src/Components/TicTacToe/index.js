@@ -12,37 +12,85 @@ function TicTacToe() {
   const [eight, setEight] = useState('');
   const [nine, setNine] = useState('');
 
+  const [currPlayer, setCurrPlayer] = useState('X');
+
   const choosingBox = ({ target: { id } }) => {
     switch (id) {
       case '1':
-        setOne('X');
+        if (one !== '') {
+          return '';
+        } else {
+          setOne(currPlayer);
+        }
         break;
       case '2':
-        setTwo('X');
+        if (two !== '') {
+          return '';
+        } else {
+          setTwo(currPlayer);
+        }
         break;
       case '3':
-        setThree('X');
+        if (three !== '') {
+          return '';
+        } else {
+          setThree(currPlayer);
+        }
         break;
       case '4':
-        setFour('X');
+        if (four !== '') {
+          return '';
+        } else {
+          setFour(currPlayer);
+        }
         break;
       case '5':
-        setFive('X');
+        if (five !== '') {
+          return '';
+        } else {
+          setFive(currPlayer);
+        }
         break;
       case '6':
-        setSix('X');
+        if (six !== '') {
+          return '';
+        } else {
+          setSix(currPlayer);
+        }
         break;
       case '7':
-        setSeven('X');
+        if (seven !== '') {
+          return '';
+        } else {
+          setSeven(currPlayer);
+        }
         break;
       case '8':
-        setEight('X');
+        if (eight !== '') {
+          return '';
+        } else {
+          setEight(currPlayer);
+        }
         break;
       case '9':
-        setNine('X');
+        if (nine !== '') {
+          return '';
+        } else {
+          setNine(currPlayer);
+        }
         break;
       default:
         '';
+    }
+
+    choosingCurrPlayer();
+  }
+
+  const choosingCurrPlayer = () => {
+    if (currPlayer === "X") {
+      setCurrPlayer('O');
+    } else {
+      setCurrPlayer("X");
     }
   }
 
