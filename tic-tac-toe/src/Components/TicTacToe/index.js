@@ -112,8 +112,17 @@ function TicTacToe() {
               Play Again
             </button>
           </div>
-        ) : ( 
-          <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
+        ) : (
+          <div>
+            <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
+            <button
+              type="button"
+              className="restart"
+              onClick={ () => playAgain() }
+            >
+              Restart
+            </button>
+          </div> 
         )
       }
     </main>
