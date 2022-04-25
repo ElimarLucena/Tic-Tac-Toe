@@ -108,15 +108,15 @@ function TicTacToe() {
             <Button />
           </div>
         ) : (
-          <div className="winner-again">
+          <div>
             {
               tryAgain === 9 ? (
-                <div>
-                  <h1>Sorry, Try Again!</h1>
+                <div className="winner-again">
+                  <h1 className="try-again">Sorry, Try Again!</h1>
                   <Button />
                 </div>
               ) : (
-                <div>
+                <div className="winner-again">
                   <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
                   <button
                     type="button"

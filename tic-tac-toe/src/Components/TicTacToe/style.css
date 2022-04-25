@@ -129,3 +129,9 @@
   color: black;
 }
 
+.try-again {
+  grid-column: 2 / 3;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
