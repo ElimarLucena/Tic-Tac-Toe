@@ -113,7 +113,7 @@ function TicTacToe() {
             </button>
           </div>
         ) : (
-          <div>
+          <div className="winner-again">
             <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
             <button
               type="button"
