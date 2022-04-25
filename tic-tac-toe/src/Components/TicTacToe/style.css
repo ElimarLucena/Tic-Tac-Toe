@@ -93,7 +93,7 @@
 
 .currPlayer {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 10px;
   grid-column: 2 / 3;
   margin-bottom: 20px;
 }
@@ -107,7 +107,8 @@
 .winner {
   grid-column: 2 / 3;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .restart {
@@ -132,6 +133,7 @@
 .try-again {
   grid-column: 2 / 3;
   margin: auto;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
