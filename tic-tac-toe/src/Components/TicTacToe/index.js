@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Context from '../../Provider/context';
+import Button from '../Button';
 import './style.css';
 
 function TicTacToe() {
@@ -103,13 +104,7 @@ function TicTacToe() {
         win !== '' ? (
           <div className="winner-again">
             <h1 className="winner">Winner: <span>{ win }</span></h1>
-            <button
-              type="button"
-              className="play-again"
-              onClick={ () => playAgain() }
-            >
-              Play Again
-            </button>
+            <Button />
           </div>
         ) : (
           <div className="winner-again">

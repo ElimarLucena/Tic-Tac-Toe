@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.play-again {
+  grid-column: 2 / 3;
+  height: 40px;
+  font-size: 23px;
+  border: none;
+  background-color: rgb(253, 232, 4);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.play-again:hover {
+  background-color: rgb(63, 242, 4);
+  color: black;
+}
