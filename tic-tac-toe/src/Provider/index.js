@@ -18,6 +18,8 @@ function Provider({ children }) {
 
   const [disabled, setDisabled] = useState(false);
 
+  const [tryAgain, setTryAgain] = useState(0);
+
   const choosingBox = ({ target: { id } }) => {
     switch (id) {
       case '1':
@@ -170,7 +172,18 @@ function Provider({ children }) {
     setWin('');
 
     setDisabled(false);
+
+    setTryAgain(0);
   }
+
+  useEffect(() => {
+    const stateArr = [one, two, three, four, five, six, seven, eight, nine,];
+    stateArr.map((item) => {
+      if (item !== '') {
+        setTryAgain(tryAgain + 1);
+      }
+    })
+  }, [one, two, three, four, five, six, seven, eight, nine,])
 
   const contextValues = {
     one,
@@ -185,6 +198,7 @@ function Provider({ children }) {
     currPlayer,
     win,
     disabled,
+    tryAgain,
     choosingBox,
     playAgain,
   }

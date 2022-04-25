@@ -17,6 +17,7 @@ function TicTacToe() {
     currPlayer,
     win,
     disabled,
+    tryAgain,
     choosingBox,
     playAgain,
   } = useContext(Context);
@@ -108,14 +109,25 @@ function TicTacToe() {
           </div>
         ) : (
           <div className="winner-again">
-            <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
-            <button
-              type="button"
-              className="restart"
-              onClick={ () => playAgain() }
-            >
-              Restart
-            </button>
+            {
+              tryAgain === 9 ? (
+                <div>
+                  <h1>Sorry, Try Again!</h1>
+                  <Button />
+                </div>
+              ) : (
+                <div>
+                  <h1 className="currPlayer">Current Player: <span>{ currPlayer }</span></h1> 
+                  <button
+                    type="button"
+                    className="restart"
+                    onClick={ () => playAgain() }
+                  >
+                    Restart
+                  </button>
+                </div>
+              )
+            }
           </div> 
         )
       }
