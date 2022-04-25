@@ -99,7 +99,6 @@ function TicTacToe() {
             </button>
         </section>
       </div>
-      
       {
         win !== '' ? (
           <div className="winner-again">
