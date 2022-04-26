@@ -113,7 +113,7 @@ function TicTacToe() {
       {
         win !== '' ? (
           <div className="winner-again">
-            <h1 className="winner">Winner: <span>{ win }</span></h1>
+            <h1 className="winner">🎉😄 Winner: <span>{ win } 😄🎉</span></h1>
             <Button />
           </div>
         ) : (
@@ -121,7 +121,7 @@ function TicTacToe() {
             {
               tryAgain === 9 ? (
                 <div className="winner-again">
-                  <h1 className="try-again">Sorry, Try Again!</h1>
+                  <h1 className="try-again">Sorry, Try Again!🥺</h1>
                   <Button />
                 </div>
               ) : (
