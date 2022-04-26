@@ -208,6 +208,16 @@ function Provider({ children }) {
     setDisabled(false);
 
     setTryAgain(0);
+
+    setOneColor('');
+    setTwoColor('');
+    setThreeColor('');
+    setFourColor('');
+    setFiveColor('');
+    setSixColor('');
+    setSevenColor('');
+    setEightColor('');
+    setNineColor('');
   }
 
   useEffect(() => {
