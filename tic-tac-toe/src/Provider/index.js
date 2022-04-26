@@ -20,6 +20,16 @@ function Provider({ children }) {
 
   const [tryAgain, setTryAgain] = useState(0);
 
+  const [oneColor, setOneColor] = useState('');
+  const [twoColor, setTwoColor] = useState('');
+  const [threeColor, setThreeColor] = useState('');
+  const [fourColor, setFourColor] = useState('');
+  const [fiveColor, setFiveColor] = useState('');
+  const [sixColor, setSixColor] = useState('');
+  const [sevenColor, setSevenColor] = useState('');
+  const [eightColor, setEightColor] = useState('');
+  const [nineColor, setNineColor] = useState('');
+
   const choosingBox = ({ target: { id } }) => {
     switch (id) {
       case '1':
@@ -111,14 +121,23 @@ function Provider({ children }) {
 
     if (checkingWinner(one, two, three)) {
       setWin(one);
+      setOneColor('box-win');
+      setTwoColor('box-win');
+      setThreeColor('box-win');
       return;
     }
     if (checkingWinner(four, five, six)) {
       setWin(four);
+      setFourColor('box-win');
+      setFiveColor('box-win');
+      setSixColor('box-win');
       return;
     }
     if (checkingWinner(seven, eight, nine)) {
       setWin(seven);
+      setSevenColor('box-win');
+      setEightColor('box-win');
+      setNineColor('box-win');
       return;
     }
 
@@ -126,14 +145,23 @@ function Provider({ children }) {
 
     if (checkingWinner(one, four, seven)) {
       setWin(four);
+      setOneColor('box-win');
+      setFourColor('box-win');
+      setSevenColor('box-win');
       return;
     }
     if (checkingWinner(two, five, eight)) {
       setWin(five);
+      setTwoColor('box-win');
+      setFiveColor('box-win');
+      setEightColor('box-win');
       return;
     }
     if (checkingWinner(three, six, nine)) {
       setWin(six);
+      setThreeColor('box-win');
+      setSixColor('box-win');
+      setNineColor('box-win');
       return;
     }
 
@@ -141,10 +169,16 @@ function Provider({ children }) {
 
     if (checkingWinner(one, five, nine)) {
       setWin(nine);
+      setOneColor('box-win');
+      setFiveColor('box-win');
+      setNineColor('box-win');
       return;
     }
     if (checkingWinner(three, five, seven)) {
       setWin(five);
+      setThreeColor('box-win');
+      setFiveColor('box-win');
+      setSevenColor('box-win');
       return;
     }
 
@@ -199,6 +233,15 @@ function Provider({ children }) {
     win,
     disabled,
     tryAgain,
+    oneColor,
+    twoColor,
+    threeColor,
+    fourColor,
+    fiveColor,
+    sixColor,
+    sevenColor,
+    eightColor,
+    nineColor,
     choosingBox,
     playAgain,
   }

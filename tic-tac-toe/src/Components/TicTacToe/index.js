@@ -18,6 +18,15 @@ function TicTacToe() {
     win,
     disabled,
     tryAgain,
+    oneColor,
+    twoColor,
+    threeColor,
+    fourColor,
+    fiveColor,
+    sixColor,
+    sevenColor,
+    eightColor,
+    nineColor,
     choosingBox,
     playAgain,
   } = useContext(Context);
@@ -29,7 +38,7 @@ function TicTacToe() {
         <section className="box-conatiner">
             <button
               id="1"
-              className={ `box ${one}` }
+              className={ `box ${one} ${oneColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -37,7 +46,7 @@ function TicTacToe() {
             </button>
             <button
               id="2"
-              className={ `box ${two}` }
+              className={ `box ${two} ${twoColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -45,7 +54,7 @@ function TicTacToe() {
             </button>
             <button
               id="3"
-              className={ `box ${three}` }
+              className={ `box ${three} ${threeColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -53,7 +62,7 @@ function TicTacToe() {
             </button>
             <button
               id="4"
-              className={ `box ${four}` }
+              className={ `box ${four} ${fourColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -61,7 +70,7 @@ function TicTacToe() {
             </button>
             <button
               id="5"
-              className={ `box ${five}` }
+              className={ `box ${five} ${fiveColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -69,7 +78,7 @@ function TicTacToe() {
             </button>
             <button
               id="6"
-              className={ `box ${six}` }
+              className={ `box ${six} ${sixColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -77,7 +86,7 @@ function TicTacToe() {
             </button>
             <button
               id="7"
-              className={ `box ${seven}` }
+              className={ `box ${seven} ${sevenColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -85,7 +94,7 @@ function TicTacToe() {
             </button>
             <button
               id="8"
-              className={ `box ${eight}` }
+              className={ `box ${eight} ${eightColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
@@ -93,7 +102,7 @@ function TicTacToe() {
             </button>
             <button
               id="9"
-              className={ `box ${nine}` }
+              className={ `box ${nine} ${nineColor}` }
               disabled={ disabled }
               onClick={ (event) => choosingBox(event) }
             >
