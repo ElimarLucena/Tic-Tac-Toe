@@ -146,3 +146,88 @@
   color: rgb(63, 242, 4);
 }
 
+/* for mobile phones */
+
+@media screen and (max-width: 480px) and (min-width: 401px) {
+  .main-container {
+    padding-top: 20%;
+  }
+
+  .game-container {
+    width: 280px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .X {
+    font-size: 35px;
+  }
+  
+  .O {
+    font-size: 35px;
+  }
+
+  .currPlayer {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+
+  .winner-again {
+    grid-template-columns: 1fr 250px 1fr;
+  }
+
+  .winner {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+
+  .try-again {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 270px) and (max-width: 400px) {
+  .main-container {
+    padding-top: 20%;
+  }
+
+  .game-container {
+    width: 250px;
+  }
+
+  .box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .X {
+    font-size: 35px;
+  }
+  
+  .O {
+    font-size: 35px;
+  }
+
+  .currPlayer {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+
+  .winner-again {
+    grid-template-columns: 1fr 250px 1fr;
+  }
+
+  .winner {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+
+  .try-again {
+    margin-top: 7px;
+    font-size: 24px;
+  }
+}
