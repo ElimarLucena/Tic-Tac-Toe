@@ -6,8 +6,8 @@
 
 .main-container {
   background-color: rgb(82, 77, 139);
-  height: 100vh;
-  padding-top: 5%;
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
 .game-container {
