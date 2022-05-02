@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TicTacToe from './Components/TicTacToe';
+import Roads from './Routes';
 import Provider from './Provider';
 import './App.css';
 
@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <Provider>
-        <TicTacToe />
+        <Roads />
       </Provider>
     );
   }
