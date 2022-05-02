@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Context from '../../Provider/context';
-import Button from '../Button';
+import Button from '../../Components/Button';
 import './style.css';
 
 function TicTacToe() {
