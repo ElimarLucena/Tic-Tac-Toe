@@ -44,3 +44,7 @@
   color: rgb(82, 77, 139);
   border: solid 5px rgb(82, 77, 139);
 }
+
+.animation-login {
+  grid-column: 2 / 3;
+}

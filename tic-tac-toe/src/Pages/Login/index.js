@@ -7,7 +7,9 @@ function Login() {
   const navigate = useNavigate();
   return (
     <section className="conatiner-login">
-      <Animation />
+      <div className="animation-login">
+        <Animation />
+      </div>
       <h1 className="title-login">Tic Tac Toe</h1>
       <button
         type="button"
