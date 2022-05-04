@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 // import Animation from '../../Components/animation';
-import './style.css'
+import './style.css';
 
 function Login() {
   const navigate = useNavigate();
