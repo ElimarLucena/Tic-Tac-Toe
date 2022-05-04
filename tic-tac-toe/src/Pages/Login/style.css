@@ -7,18 +7,23 @@
 .conatiner-login {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  grid-template-rows: 1fr 200px 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
   min-height: 100vh;
-  background-color: rgb(8, 8, 9);
+  /* background-color:rgb(82, 77, 139); */
+  background-image: linear-gradient(to bottom, rgb(82, 77, 139) 0, rgb(82, 77, 139) 37%, rgb(102, 21, 195) 95%);
+}
+
+.conatiner-title {
+  justify-content: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .title-login {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
   text-align: center;
   font-size: 50px;
-  margin: auto;
-  color: rgb(253, 232, 4);
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
 }
 
 .button-login {
@@ -26,25 +31,33 @@
   grid-row: 3 / 4;
   margin: 0 auto;
   border: none;
-  background-color: black;
-  color: rgb(253, 232, 4);
+  background-color: rgb(253, 232, 4);
+  color: rgb(82, 77, 139);
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  border: solid 5px rgb(253, 232, 4);
+  width: 80%;
+  margin: auto;
+  height: 40px;
   cursor: pointer;
   font-weight: bold;
   font-size: 23px;
 }
 
 .button-login:hover {
-  background-color: rgb(253, 232, 4);
-  color: rgb(82, 77, 139);
-  border: solid 5px rgb(82, 77, 139);
+  /* background-color: rgb(82, 77, 139); */
+  color: black;
+  border: solid 5px rgb(253, 232, 4);
 }
 
 /* .animation-login {
   grid-column: 2 / 3;
 } */
+
+.conatiner-login h2 {
+  color: rgb(255, 255, 255);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
