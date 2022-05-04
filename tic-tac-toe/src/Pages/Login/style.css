@@ -7,9 +7,9 @@
 .conatiner-login {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 1fr 200px 1fr 1fr;
   min-height: 100vh;
-  background-color: black;
+  background-color: rgb(8, 8, 9);
 }
 
 .title-login {
@@ -40,7 +40,7 @@
 }
 
 .button-login:hover {
-  background-color: rgb(63, 242, 4);
+  background-color: rgb(253, 232, 4);
   color: rgb(82, 77, 139);
   border: solid 5px rgb(82, 77, 139);
 }
