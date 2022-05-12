@@ -146,20 +146,21 @@
   color: rgb(63, 242, 4);
 }
 
+
 @media screen and (max-width: 1279px) and (min-width: 769px){
   .main-container {
     padding-top: 100px;
   }
-
+  
   .game-container {
     width: 370px;
   }
-
+  
   .box {
     width: 110px;
     height: 110px;
   }
-
+  
   .X {
     font-size: 45px;
   }
@@ -167,21 +168,21 @@
   .O {
     font-size: 45px;
   }
-
+  
   .currPlayer {
     margin-top: 7px;
     font-size: 30px;
   }
-
+  
   .winner-again {
     grid-template-columns: 1fr 370px 1fr;
   }
-
+  
   .winner {
     margin-top: 7px;
     font-size: 30px;
   }
-
+  
   .try-again {
     margin-top: 7px;
     font-size: 30px;
@@ -192,16 +193,16 @@
   .main-container {
     padding-top: 100px;
   }
-
+  
   .game-container {
     width: 320px;
   }
-
+  
   .box {
     width: 91.40px;
     height: 91.40px;
   }
-
+  
   .X {
     font-size: 40px;
   }
@@ -209,21 +210,21 @@
   .O {
     font-size: 40px;
   }
-
+  
   .currPlayer {
     margin-top: 7px;
     font-size: 28px;
   }
-
+  
   .winner-again {
     grid-template-columns: 1fr 320px 1fr;
   }
-
+  
   .winner {
     margin-top: 7px;
     font-size: 28px;
   }
-
+  
   .try-again {
     margin-top: 7px;
     font-size: 28px;
@@ -234,16 +235,16 @@
   .main-container {
     padding-top: 20%;
   }
-
+  
   .game-container {
     width: 280px;
   }
-
+  
   .box {
     width: 80px;
     height: 80px;
   }
-
+  
   .X {
     font-size: 35px;
   }
@@ -251,21 +252,21 @@
   .O {
     font-size: 35px;
   }
-
+  
   .currPlayer {
     margin-top: 7px;
     font-size: 24px;
   }
-
+  
   .winner-again {
     grid-template-columns: 1fr 250px 1fr;
   }
-
+  
   .winner {
     margin-top: 7px;
     font-size: 24px;
   }
-
+  
   .try-again {
     margin-top: 7px;
     font-size: 24px;
@@ -276,16 +277,16 @@
   .main-container {
     padding-top: 20%;
   }
-
+  
   .game-container {
     width: 250px;
   }
-
+  
   .box {
     width: 70px;
     height: 70px;
   }
-
+  
   .X {
     font-size: 35px;
   }
@@ -293,23 +294,29 @@
   .O {
     font-size: 35px;
   }
-
+  
   .currPlayer {
     margin-top: 7px;
     font-size: 24px;
   }
-
+  
   .winner-again {
     grid-template-columns: 1fr 250px 1fr;
   }
-
+  
   .winner {
     margin-top: 7px;
     font-size: 24px;
   }
-
+  
   .try-again {
     margin-top: 7px;
     font-size: 24px;
+  }
+}
+
+@media (max-height: 600px){
+  .main-container {
+    padding-top: 30px;
   }
 }
