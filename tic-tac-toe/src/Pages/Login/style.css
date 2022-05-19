@@ -41,8 +41,7 @@
   margin: auto;
   height: 40px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 23px;
+  font-size: 19px;
 }
 
 .button-login:hover {
@@ -56,7 +55,7 @@
   grid-row: 2 / 3;
   text-align: center;
   margin-top: 40px;
-  font-size: 30px;
+  font-size: 19px;
 }
 
 @media screen and (min-width: 1280px){
@@ -122,7 +121,7 @@
 
   .title-login {
     text-align: center;
-    font-size: 55px;
+    font-size: 23px;
     margin-top: 40%;
     color: rgb(255, 255, 255);
   }
@@ -133,7 +132,7 @@
   }
 
   .conatiner-login h2 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
@@ -146,7 +145,7 @@
 
   .title-login {
     text-align: center;
-    font-size: 45px;
+    font-size: 22px;
     margin-top: 40%;
     color: rgb(255, 255, 255);
   }
