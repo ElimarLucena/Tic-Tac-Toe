@@ -97,8 +97,8 @@
 
   .title-login {
     text-align: center;
-    font-size: 55px;
-    margin-top: 30%;
+    font-size: 25px;
+    margin-top: 150px;
     color: rgb(255, 255, 255);
   }
 
@@ -108,7 +108,7 @@
   }
 
   .conatiner-login h2 {
-    font-size: 35px;
+    font-size: 22px;
   }
 }
 
