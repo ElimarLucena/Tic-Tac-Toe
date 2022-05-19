@@ -31,7 +31,6 @@
 .button-login {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  margin: 0 auto;
   border: none;
   background-color: rgb(253, 232, 4);
   color: rgb(82, 77, 139);
@@ -59,8 +58,24 @@
 }
 
 @media screen and (min-width: 1280px){
+  .conatiner-login {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .title-login {
+    font-size: 30px;
+    margin-top: 150px;
+  }
+
   .button-login {
     max-width: 280px;
+    margin-top: 40px;
+  }
+
+  .conatiner-login h2 {
+    font-size: 27px;
   }
 }
 
