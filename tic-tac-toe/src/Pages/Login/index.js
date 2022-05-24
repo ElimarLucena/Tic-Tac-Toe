@@ -8,7 +8,7 @@ function Login() {
     <section className="conatiner-login">
       <div className="conatiner-title">
         <h1 className="title-login">Tic Tac Toe</h1>
-        <h2>😄Lets Go!🚀</h2>
+        <h2>Lets Go!</h2>
       </div>
       <button
         type="button"
