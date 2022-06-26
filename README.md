@@ -1,5 +1,7 @@
 <h1 align="center">🕹️ Tic-Tac-Toe 👾</h1>
 
+![ezgifcom-gif-maker_sggykMAH](https://user-images.githubusercontent.com/86797684/175795357-3ef6a224-c394-4e0b-bc7a-c1ce80c6e5de.gif)
+
 ## 📗 About</h2>
 
 **Jogo da Velha** ou Tic-tac-toe (inglês americano) é um jogo de papel e lápis para dois jogadores que se revezam marcando os espaços em três por três. grade com X ou O. O jogador que conseguir colocar três de suas marcas em uma linha horizontal, vertical ou diagonal é o vencedor.
