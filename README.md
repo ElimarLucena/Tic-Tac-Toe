@@ -1,6 +1,8 @@
 <h1 align="center">🕹️ Tic-Tac-Toe 👾</h1>
 
-![ezgifcom-gif-maker_sggykMAH](https://user-images.githubusercontent.com/86797684/175795357-3ef6a224-c394-4e0b-bc7a-c1ce80c6e5de.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/86797684/175795357-3ef6a224-c394-4e0b-bc7a-c1ce80c6e5de.gif" />
+</p>
 
 ## 📗 About</h2>
 
