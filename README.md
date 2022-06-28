@@ -11,7 +11,7 @@
 - [React](https://reactjs.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## 🚀 How to Contribute
+## 🚀 How to run locally
 
 ```bash
   # Clone the project
